@@ -5,29 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces&family=Gothic+A1:wght@600;800;900&family=Montserrat:wght@100&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-
-    <div class="card">
-        <div class="card-image">
-        </div>
-        
-        <div class="card-body">
-            <h5 class="card-title">PERFUME</h5>
-            <h1 id="title">Gabrielle Essence Eau De Parfum</h1>
-            <p class="card-text">A floral, solar and voluptuous interpretation composed by Oliver Polge, Perfumer-Creator for the House of CHANEL.</p>
-            <div class="price">
-                <h1 id="price">$149.99 </h1>
-                <p>$169.99</p>
+   
+<main>
+    <div class="contentContainer">
+        <section class="productCard">
+            <div class="productImg">
+              <img id="productImage" src="./images/image-product-mobile.jpg" alt="Chanel Essence Purfume"> 
             </div>
-            
-            <button><img src="images/icon-cart.svg" alt="" style="margin-right: 5px;"> Add to Cart</button>    
-        </div>
+            <div class="productDescription">
+                <div class="descriptionContainer">
+                    <h1>Perfume</h1>
+                    <h2>Gabrielle Essence Eau De Parfum</h2>
+                    <p>A floral, solar and voluptous interpretation composed by Olivier Polge, Perfumer-Creator for the House of <span class="uppercase">Chanel</span></p>
+                    <div class="pricing">
+                        <p class="currentPrice">$149.99</p>
+                        <p class="oldPrice">$169.99</p>
+                    </div>
+                    <button class="btnMain"><img src="./images/icon-cart.svg" alt="add item to the cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
     </div>
-    
+</main>
+
+
+
+
+<script src="js/app.js"></script>
 </body>
 </html>

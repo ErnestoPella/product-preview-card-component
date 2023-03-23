@@ -1,97 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
 
-h5{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    letter-spacing: 7px;
-    color: hsl(228, 12%, 48%);
-    margin-bottom: -11px;
-    margin-top: 40px;
-}
 
-p{
+/* CSS Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-size: 14px;
-    color: hsl(228, 12%, 48%);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
 }
 
-body{
-    background-color: hsl(30, 38%, 92%);
+/* Variables */
+
+:root {
+   --cardBG: #FFFFFF;
+   --mainBG: #F2EAE2;
+   --leadFontColor: #1C232B;
+   --secondaryFontColor: #6C7289;
+   --btnMainColor: #3D8168;
+   --btnMainActive: #1A4032;
+   --leadFont: 'Fraunces', serif;
+   --secondaryFont: 'Montserrat', sans-serif;
+}
+
+main {
     height: 100vh;
+    width: 100vw;
+    min-width: 375px;
+    background-color: var(--mainBG);
+}
+
+.contentContainer {
+    max-width: 1440px;
+    height: 100%;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
-.card{
-    background-color: hsl(0, 0%, 100%);
-    min-width: 650px;
-    width: 600px;
-    display: flex;
+.productCard {
+    max-width: 343px;
+    max-height: 611px;
+    height: 100%;
+    background-color: var(--cardBG);
     border-radius: 10px;
-    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
 }
 
-.card-image{
-    background-image: url('../images/image-product-desktop.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
+.productImg {
     width: 100%;
-    border-radius:10px 0 0 10px;
+    height: 40%;
+}
+
+.productImg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.productDescription {
+    height: 60%;
+}
+
+.descriptionContainer {
+    padding: 2rem;
+}
+
+.descriptionContainer h1 {
+    color: var(--secondaryFontColor);
+    font-family: var(--secondaryFont);
+    font-weight: 500;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.descriptionContainer h2 {
+    color: var(--leadFontColor);
+    font-family: var(--leadFont);
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.descriptionContainer p {
+    color: var(--secondaryFontColor);
+    font-family: var(--secondaryFont);
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.pricing {
+    display: flex;
     
 }
 
-.card-body{
-    min-height: 480px;
-    width: 80%;
+.pricing .currentPrice {
+    color: var(--btnMainColor);
+    font-family: var(--leadFont);
+    font-size: 2rem;
+    margin-right: 1rem;
 }
 
-.card-text{
-    width: inherit;
-    font-size: 15px;
+.pricing .oldPrice {
+    text-decoration: line-through;
 }
 
-#title{
-    font-family: 'Fraunces', sans-serif;
-    font-size: 40px;
+.btnMain {
+    color: var(--mainBG);
+    background-color: var(--btnMainColor);
+    width: 100%;
+    padding: 1rem;
+    font-family: var(--secondaryFont);
     font-weight: 700;
-    line-height: 1;
-}
-
-#price{
-    color: hsl(158, 36%, 37%);
-    font-family: 'Fraunces', serif;
-    margin-right: 20px;
-}
-
-.price{
-    display: flex;
-    align-items: center;
-}
-
-.price p{
-    text-decoration-line: line-through;
-}
-
-.card-body button{
-    width: 90%;
-    min-width: 90%;
-    height: 50px;
-    border: 0;
-    color: white;
-    background-color: hsl(158, 36%, 37%);
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
+    border: none;
+    border-radius: 5px;
 }
 
-.card-body button:hover{
-    background-color: hsl(212, 21%, 14%);
+.btnMain img {
+    margin-right: .8rem;
 }
 
+@media screen and (min-width: 601px) {
+    .productCard {
+        width: 100%;
+        height: 100%;
+        max-width: 600px;
+        max-height: 450px;
+        display: flex;
+    }
+
+    .productImg {
+        width: 50%;
+        height: 100%;
+    }
+
+    .productImg img {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .productDescription {
+        width: 50%;
+        height: 100%;
+        padding: .2rem
+    }
+
+    .productDescription h1 {
+        margin-bottom: 1.2rem;
+    }
+
+    .productDescription h2 {
+        font-size: 2.3rem;
+        line-height: 2.4rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .productDescription p {
+        margin-bottom: 2.2rem;
+    }
+
+    
+    .pricing .currentPrice {
+        font-size: 2.2rem;
+    }
 
 
+    
+}
