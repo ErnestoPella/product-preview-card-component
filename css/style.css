@@ -1,0 +1,97 @@
+
+h5{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 7px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: -11px;
+    margin-top: 40px;
+}
+
+p{
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: hsl(0, 0%, 100%);
+    min-width: 650px;
+    width: 600px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+}
+
+.card-image{
+    background-image: url('../images/image-product-desktop.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    border-radius:10px 0 0 10px;
+    
+}
+
+.card-body{
+    min-height: 480px;
+    width: 80%;
+}
+
+.card-text{
+    width: inherit;
+    font-size: 15px;
+}
+
+#title{
+    font-family: 'Fraunces', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+#price{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    margin-right: 20px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+}
+
+.price p{
+    text-decoration-line: line-through;
+}
+
+.card-body button{
+    width: 90%;
+    min-width: 90%;
+    height: 50px;
+    border: 0;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.card-body button:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+
+
+
